@@ -1,29 +1,31 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="header">
-        <p>Header</p>
-        <p>Signup</p>
-        <p>Profile</p>
-        <hr />
-      </div>
+    <header>
+        <nav>
+            <a href="#">Header</a>
+            <div class="head-right">
+                <a onclick="redirectToSignUp()">SignUp</a>
+                <a onclick="redirectToProfile()">Profile</a>
+            </div>
+        </nav>
+    </header>
 
-      <div class="details">
+    <div class="profile-container">
+        <h1 style="font-weight: 400; font-size: 32px;">Profile</h1>
+        <div id="profile-name"><div>Full Name :</div></div>
+        <div id="profile-email"><div>Email :</div></div>
+        <div id="profile-pass"><div>Password :</div></div>
+        <button id="logout">Logout</button>
+    </div>
 
-        <h2>Profile</h2>
-        <h2>Full Name:</h2>
-        <h2>Email:</h2>
-        <h2>Password:</h2>
-      </div>
-      <button>Logout</button>
-
-
-<script src="/profile.js"></script>
-
+    <script src="./profileScript.js"></script>
 </body>
 </html>
